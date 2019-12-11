@@ -1,0 +1,40 @@
+% a= [0.3299 0.3307 0.3313;
+%  0.3122 0.3136 0.3143;
+%  0.3102 0.3108 0.3116;
+%  0.3104 0.3106 0.3111];
+% xvalue={20, 30, 40};
+% yvalue={15, 20, 25, 30};
+% h=heatmap(xvalue,yvalue,a,'Colormap',parula,'ColorLimits',[0.3 0.35]);
+% h.Title = 'Results of Using the Regression Tree';
+% h.XLabel = 'min\_samples\_split';
+% h.YLabel = 'max\_depth';
+
+% xgb = [0.292  0.2952 0.2974;
+%  0.2754 0.2801 0.2836;
+%  0.2636 0.2701 0.2733];
+% xvalue={20,40,60};
+% yvalue={6, 8, 10};
+% h=heatmap(xvalue,yvalue,xgb,'Colormap',parula,'ColorLimits',[0.25 0.3]);
+% h.Title = 'Results of Using XGBoost';
+% h.XLabel = 'min\_child\_weight';
+% h.YLabel = 'max\_depth';
+
+% lgb = [0.2651 0.2694 0.2711 0.2748;
+%  0.2573 0.261  0.262  0.2652;
+%  0.2529 0.2569 0.2578 0.2593];
+% xvalue={20,40,60,100};
+% yvalue={6, 8, 10};
+% h=heatmap(xvalue,yvalue,lgb,'Colormap',parula,'ColorLimits',[0.25 0.3]);
+% h.Title = 'Results of Using Light GBM';
+% h.XLabel = 'min\_child\_sample';
+% h.YLabel = 'max\_depth';
+
+cat = [0.2565 0.2568 0.2567 0.257;
+ 0.2466 0.2461 0.2463 0.247;
+ 0.2384 0.2386 0.2384 0.238];
+xvalue={5,10,20,50};
+yvalue={6, 8, 10};
+h=heatmap(xvalue,yvalue,cat,'Colormap',parula,'ColorLimits',[0.22 0.3]);
+h.Title = 'Results of Using CatBoost';
+h.XLabel = 'regularization parameter';
+h.YLabel = 'max\_depth';
